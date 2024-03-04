@@ -3,12 +3,12 @@ package libreria;
 public class LibraryManagementSystem {
 
     public static void run() {
-        int choice;
+        int opcion;
         do {
             displayMainMenu();
-            choice = ConsoleReader.readInt("Elige uno: ");
+            opcion = ConsoleReader.readInt("Elige uno: ");
 
-            switch (choice) {
+            switch (opcion) {
                 case 1 ->
                     LibraryController.borrowBook();
                 case 2 ->
@@ -24,7 +24,7 @@ public class LibraryManagementSystem {
                 default ->
                     System.out.println("Opción no valida.");
             }
-        } while (choice != 6);
+        } while (opcion != 6);
     }
 
     public static void displayMainMenu() {
